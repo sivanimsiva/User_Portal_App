@@ -42,13 +42,18 @@ class _LoginScreenState extends State<LoginScreen> {
               children: [
                 const Icon(Icons.account_circle, size: 90),
 
-                const SizedBox(height: 20),
+                const SizedBox(height: 10),
 
                 const Text(
                   'Login',
                   style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
                 ),
 
+                const SizedBox(height: 10),
+                const Text(
+                  'Welcome Back',
+                  style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                ),
                 const SizedBox(height: 30),
 
                 TextFormField(
@@ -96,7 +101,10 @@ class _LoginScreenState extends State<LoginScreen> {
                     onPressed: _login,
                     child: const Padding(
                       padding: EdgeInsets.all(14),
-                      child: Text('Login', style: TextStyle(fontSize: 16)),
+                      child: Text(
+                        'Sign In',
+                        style: TextStyle(fontSize: 16, color: Colors.white),
+                      ),
                     ),
                   ),
                 ),
