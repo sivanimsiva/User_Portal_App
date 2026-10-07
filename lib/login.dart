@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:user_portal_app/home.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -15,9 +16,10 @@ class _LoginScreenState extends State<LoginScreen> {
 
   void _login() {
     if (_formKey.currentState!.validate()) {
-      ScaffoldMessenger.of(
+      Navigator.push(
         context,
-      ).showSnackBar(const SnackBar(content: Text('Login successful!')));
+        MaterialPageRoute(builder: (context) => const HomeScreen()),
+      );
     }
   }
 
