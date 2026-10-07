@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:user_portal_app/home.dart';
 import 'package:user_portal_app/login.dart';
 
 void main() {
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home:const LoginScreen(),
+      home: const LoginScreen(),
     );
   }
 }
